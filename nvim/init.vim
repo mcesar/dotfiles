@@ -91,3 +91,8 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:lsp_signs_enabled = 1           " enable signs
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 let g:lsp_signs_error = {'text': '✗'}
+
+" airline
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='base16'
