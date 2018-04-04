@@ -97,6 +97,3 @@ let g:lsp_signs_error = {'text': '✗'}
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='base16'
-
-" extra config
-source /dotfiles/nvim/config.vim
