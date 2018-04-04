@@ -99,4 +99,4 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='base16'
 
 " extra config
-source config
+source config.vim
