@@ -52,12 +52,6 @@ if has('termguicolors')
     set termguicolors
 endif
 
-" search
-set ignorecase
-set smartcase
-set hlsearch
-nnoremap <silent> <leader><Space> :nohlsearch<Bar>:echo<CR>
-
 " shortcuts
 let mapleader = "\<Space>"
 nnoremap <Leader>r <C-^>
@@ -80,6 +74,13 @@ map <leader>n :NERDTreeToggle<CR>
 inoremap <C-c> <Esc>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>
+nnoremap ; :
+
+" search
+set ignorecase
+set smartcase
+set hlsearch
+nnoremap <silent> <Leader><Space> :nohlsearch<Bar>:echo<CR>
 
 " asyncomplete
 imap <c-space> <Plug>(asyncomplete_force_refresh)
@@ -96,3 +97,6 @@ let g:lsp_signs_error = {'text': '✗'}
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='base16'
+
+" extra config
+source config
