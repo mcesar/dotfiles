@@ -80,8 +80,8 @@ set smartcase
 set hlsearch
 nnoremap <silent> <Leader><Space> :nohlsearch<Bar>:echo<CR>
 
-" asyncomplete
-imap <c-space> <Plug>(asyncomplete_force_refresh)
+" ncm
+imap <c-space> <Plug>(cm_force_refresh)
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
