@@ -1,7 +1,7 @@
 set hidden
 
 let g:LanguageClient_serverCommands = {
-    \ 'java': ['/bin/jdt.ls'],
+    \ 'java': ['/jdt-ls/startup.sh'],
     \ }
 
 nnoremap <silent> gh :call LanguageClient#textDocument_hover()<CR>
