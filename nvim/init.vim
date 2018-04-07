@@ -1,7 +1,7 @@
 set nocompatible hidden laststatus=2
 
 call plug#begin('/dotfiles/nvim/plugged')
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'sh install.sh' }
+Plug 'autozimu/LanguageClient-neovim', { 'tag': '0.1.58', 'do': 'sh install.sh' }
 Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -86,11 +86,6 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-
-" lsp
-let g:lsp_signs_enabled = 1           " enable signs
-let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
-let g:lsp_signs_error = {'text': '✗'}
 
 " airline
 let g:airline_powerline_fonts=1
