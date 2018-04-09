@@ -75,6 +75,7 @@ map <leader>n :NERDTreeToggle<CR>
 inoremap <C-c> <Esc>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>
+nnoremap <C-l> :Files<CR>
 nnoremap ; :
 
 " search
