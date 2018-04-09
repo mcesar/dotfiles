@@ -1,5 +1,7 @@
 set nocompatible hidden laststatus=2
 
+set rtp+=/root/.fzf
+
 call plug#begin('/dotfiles/nvim/plugged')
 Plug 'autozimu/LanguageClient-neovim', { 'tag': '0.1.58', 'do': 'sh install.sh' }
 Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
@@ -8,6 +10,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " general
@@ -85,6 +88,7 @@ imap <c-space> <Plug>(cm_force_refresh)
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+let g:cm_matcher = {'module': 'cm_matchers.fuzzy_matcher', 'case': 'smartcase'}
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " airline
