@@ -103,6 +103,6 @@ let g:fzf_files_options =
 \ '--preview "(/bin/termpix --width 50 --true-color {} || pygmentize -f 16m {} || cat {}) 2> /dev/null "'
 
 " LanguageClient
-let g:LanguageClient_serverCommands = {}
-let g:LanguageClient_serverCommands['javascript'] = ['javascript-typescript-stdio']
-let g:LanguageClient_serverCommands['python'] = ['pyls']
+nnoremap <silent> gh :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> <F3> :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
