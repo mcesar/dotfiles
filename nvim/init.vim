@@ -6,7 +6,6 @@ call plug#begin('/dotfiles/nvim/plugged')
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'sh install.sh' }
 Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -83,6 +82,12 @@ set ignorecase
 set smartcase
 set hlsearch
 nnoremap <silent> <Leader><Space> :nohlsearch<Bar>:echo<CR>
+
+" NERD tree
+let NERDTreeMinimalUI=1
+
+" Dev icons
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
 
 " ncm
 imap <c-space> <Plug>(cm_force_refresh)
