@@ -3,7 +3,7 @@ set nocompatible hidden laststatus=2
 set rtp+=/root/.fzf
 
 call plug#begin('/dotfiles/nvim/plugged')
-Plug 'autozimu/LanguageClient-neovim', { 'tag': '0.1.58', 'do': 'sh install.sh' }
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'sh install.sh' }
 Plug 'roxma/nvim-completion-manager', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -100,4 +100,4 @@ let g:airline_theme='base16'
 " fzf
 let g:fzf_layout = { 'down': '~60%' }
 let g:fzf_files_options =
-\ '--preview "(/bin/termpix --width 50 --true-color {} || cat {}) 2> /dev/null "'
+\ '--preview "(/bin/termpix --width 50 --true-color {} || pygmentize -f 16m {} || cat {}) 2> /dev/null "'
