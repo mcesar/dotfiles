@@ -101,3 +101,7 @@ let g:airline_theme='base16'
 let g:fzf_layout = { 'down': '~60%' }
 let g:fzf_files_options =
 \ '--preview "(/bin/termpix --width 50 --true-color {} || pygmentize -f 16m {} || cat {}) 2> /dev/null "'
+
+" LanguageClient
+let g:LanguageClient_serverCommands = {}
+let g:LanguageClient_serverCommands['javascript'] = ['javascript-typescript-stdio']
