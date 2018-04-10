@@ -96,3 +96,8 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='base16'
+
+" fzf
+let g:fzf_layout = { 'down': '~60%' }
+let g:fzf_files_options =
+\ '--preview "(/bin/termpix --width 50 --true-color {} || cat {}) 2> /dev/null "'
