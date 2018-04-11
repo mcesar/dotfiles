@@ -88,6 +88,7 @@ let NERDTreeMinimalUI=1
 
 " Dev icons
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
 
 " ncm
 imap <c-space> <Plug>(cm_force_refresh)
